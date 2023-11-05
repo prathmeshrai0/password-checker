@@ -146,7 +146,7 @@ function chk() {
 
 inp.addEventListener('input', chk)
 
- 
+  
 
 // explanation of some related topics
 
