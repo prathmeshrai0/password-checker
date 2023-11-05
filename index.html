@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<style>
+  .container {
+    border: 2px solid black;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+</style>
+
+<body>
+
+  <div class="container">
+
+    <label for="">Passwords need to contain a mixture of lowercase, uppercase, numbers and special characters.
+      <ol>
+        <li>min 8 character and max 16 </li>
+        <li> a letter should be capital from (A to Z)</li>
+        <li>it should contain at least 1 special character</li>
+        <li>it should contain at least 1 number</li>
+        <li>it should not contain any space</li>
+      </ol>
+
+      <br><br> <br>
+    </label>
+    <div class="input-group mb-3" class="form-control border-success">
+      <input type="text" class="form-control" placeholder="Recipient's passw" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+
+    <div id="display">
+
+    </div>
+    <!--  <input id = 'search' type="text">   -->
+    <!-- code from stackoverflow -->
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
+
+<!-- In JavaScript, the this keyword refers to an object. -->
+
+<!-- The charAt() method returns the character at a specified index (total_s_char) in a string. -->
+
+<!-- The charCodeAt() method of String values returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index. -->
+<!-- utf-16 code unit probably similar as ascii unit table  -->
+
+<!-- the isNaN() method is useful to check whether is variable is of any other type rather than the number data type. -->
+
+<!-- The JavaScript includes() method was introduced with ES6, and it is the most common and modern way of checking if a string contains a specific character or a series of characters. -->
+
+<!-- What is regex in JavaScript?
+In JavaScript, a Regular Expression (RegEx) is an object that describes a sequence of characters used for defining a search pattern. For example, /^a...s$/ The above code defines a RegEx pattern. The pattern is: any five letter string starting with a and ending with s  -->
+<!-- eg 1
+let specialChars =/^a...s$/;
+
+console.log(specialChars.test("afdss")); -->
+
+<!-- eg 2 -->
+<!-- let specialChars =/[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
+
+console.log(specialChars.test("String with speci@l ch@ract&r$"));
+console.log(specialChars.test("String with spaces"));
+console.log(specialChars.test("StringWithoutSpaces"));
+
+in this regex /[^a-zA-Z0-9\s]/
+^           means not 
+\s          all white spaces
+a-zA-Z0-9   all ranges given
+-->
