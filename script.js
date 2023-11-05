@@ -1,21 +1,6 @@
 
-
-
-
- 
-
-// The input event fires when the value of an <input>, <select>, or <textarea> element has been changed.
-
-//       function handle(event) {
-//   // inside this event handler, "this" is the element that it was attached to
-//   // and the current value of the element can be retrieved with this.value
-//   console.log(this.value);
-// }
-
-// document.getElementById("search").addEventListener("input",handle);
-
 let inp = document.getElementsByTagName('input')[0]
-//  console.log(inp);
+
 
 let display = document.getElementById('display')
 display.setAttribute("style", 'color:red')
@@ -162,3 +147,36 @@ function chk() {
 inp.addEventListener('input', chk)
 
  
+
+// explanation of some related topics
+
+
+// In JavaScript, the this keyword refers to an object.
+
+// The charAt() method returns the character at a specified index (total_s_char) in a string.
+
+// The charCodeAt() method of String values returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.
+// utf-16 code unit probably similar as ascii unit table 
+
+// the isNaN() method is useful to check whether is variable is of any other type rather than the number data type.
+
+// The JavaScript includes() method was introduced with ES6, and it is the most common and modern way of checking if a string contains a specific character or a series of characters.
+
+//  What is regex in JavaScript?
+// In JavaScript, a Regular Expression (RegEx) is an object that describes a sequence of characters used for defining a search pattern. For example, /^a...s$/ The above code defines a RegEx pattern. The pattern is: any five letter string starting with a and ending with s  
+// eg 1
+// let specialChars =/^a...s$/;
+
+// console.log(specialChars.test("afdss"));
+
+// eg 2
+//   let specialChars =/[`!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?~ ]/;
+
+// console.log(specialChars.test("String with speci@l ch@ract&r$"));
+// console.log(specialChars.test("String with spaces"));
+// console.log(specialChars.test("StringWithoutSpaces"));
+
+// in this regex /[^a-zA-Z0-9\s]/
+// ^           means not 
+// \s          all white spaces
+// a-zA-Z0-9   all ranges given
